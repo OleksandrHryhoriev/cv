@@ -1,0 +1,29 @@
+.sidebar {
+   min-height: 100vh;
+   position: relative;
+   z-index: 2;
+   flex: 0 0 380px;
+   background-color: #1e2939;
+   padding: 220px 20px 20px;
+   color: #fff;
+   box-shadow: 3px 0 7px 0px #1e2939;
+   &__block {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      &:not(:last-child) {
+         border-bottom: 1px solid #fffdf6;
+      }
+      & ul,
+      & nav {
+         display: flex;
+         flex-direction: column;
+         padding: 0 0 0 20px;
+      }
+      & ul {
+         gap: 18px;
+      }
+      & nav {
+         gap: 25px;
+      }
+   }
+}
