@@ -7,9 +7,17 @@ import PhoneIcon from "../../icons/PhoneIcon";
 import TelegramIcon from "../../icons/TelegramIcon";
 import styles from "./Contacts.module.scss";
 
-const Contacts = () => {
+type ContactsProps = {
+   isShow: boolean;
+};
+
+const Contacts = ({ isShow }: ContactsProps) => {
    return (
-      <div className={styles.contacts}>
+      <div
+         className={
+            isShow ? `${styles.contacts} ${styles.open}` : `${styles.contacts}`
+         }
+      >
          <h2 className={styles.contacts__title}>
             <span>My</span>Contacts
          </h2>
