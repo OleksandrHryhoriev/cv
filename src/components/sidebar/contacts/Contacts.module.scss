@@ -1,3 +1,5 @@
+@use "../../../index.scss" as vars;
+
 .contacts {
    &__title {
       display: none;
@@ -31,18 +33,18 @@
    &__link,
    &__icon {
       & svg g {
-         fill: #ffffff;
+         fill: vars.$color-light;
          transition: fill 0.3s ease;
       }
    }
    &__link {
-      color: #ffffff;
+      color: vars.$color-light;
       transition: color 0.3s ease;
       @media (hover: hover) {
          &:hover {
-            color: #548ca8;
+            color: vars.$color-hover;
             & svg g {
-               fill: #548ca8;
+               fill: vars.$color-hover;
             }
          }
       }

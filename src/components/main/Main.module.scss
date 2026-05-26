@@ -1,0 +1,15 @@
+@use "../../index.scss" as vars;
+
+.main {
+   flex: 1 1 auto;
+   padding: 220px 20px 40px 40px;
+   color: vars.$color-dark;
+   background-color: vars.$color-light;
+
+   @media (max-width: 992px) {
+      padding: 220px 10px 30px 15px;
+   }
+   @media (max-width: 768px) {
+      padding: 140px 10px 30px 65px;
+   }
+}

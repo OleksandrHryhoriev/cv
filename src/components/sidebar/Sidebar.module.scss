@@ -1,3 +1,5 @@
+@use "../../index.scss" as vars;
+
 .sidebar {
    min-height: 100vh;
    position: relative;
@@ -7,16 +9,16 @@
    &__wrapper {
       width: 380px;
       height: 100%;
-      background-color: #1e2939;
+      background-color: vars.$color-dark;
       padding: 220px 20px 20px;
-      color: #fff;
-      box-shadow: 3px 0 7px 0px #1e2939;
+      color: vars.$color-light;
+      box-shadow: 3px 0 7px 0px vars.$color-dark;
    }
    &__block {
       margin-bottom: 30px;
       padding-bottom: 30px;
       &:not(:last-child) {
-         border-bottom: 1px solid #fffdf6;
+         border-bottom: 1px solid vars.$color-light;
       }
    }
    @media (max-width: 992px) {

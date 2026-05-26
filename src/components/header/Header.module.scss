@@ -1,3 +1,5 @@
+@use "../../index.scss" as vars;
+
 .header {
    position: absolute;
    z-index: 5;
@@ -11,7 +13,7 @@
       position: absolute;
       top: 20px;
       left: 0;
-      background-color: #548ca8;
+      background-color: vars.$color-hover;
    }
    &__container {
       max-width: 1200px;
@@ -24,7 +26,7 @@
    }
 
    &__info {
-      color: #fffdf6;
+      color: vars.$color-light;
       padding: 0px 0 0 30px;
    }
 
@@ -54,7 +56,7 @@
          top: 0;
          left: 0;
          border-radius: 50%;
-         background-color: #fffdf6;
+         background-color: vars.$color-light;
       }
       & span {
          display: block;

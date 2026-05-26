@@ -1,0 +1,83 @@
+@use "../../../index.scss" as vars;
+
+.education {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+   }
+   &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+   &__type {
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+   }
+   &__place {
+      font-size: 13px;
+      padding-left: 10px;
+   }
+   &__position {
+      font-weight: 600;
+      font-size: 17px;
+      text-transform: uppercase;
+      padding-left: 10px;
+      color: vars.$color-accent;
+   }
+   &__period {
+      font-weight: 500;
+      font-size: 16px;
+      align-self: center;
+      text-align: right;
+   }
+
+   @media (max-width: 768px) {
+      gap: 15px;
+      &__item {
+         gap: 10px;
+      }
+      &__info {
+         gap: 5px;
+      }
+      &__type {
+         font-size: 18px;
+      }
+      &__place {
+         font-size: 12px;
+         padding-left: 5px;
+      }
+      &__position {
+         font-size: 15px;
+         padding-left: 5px;
+      }
+      &__period {
+         font-size: 14px;
+      }
+   }
+   @media (max-width: 470px) {
+      &__info {
+         gap: 4px;
+      }
+      &__type {
+         font-size: 16px;
+      }
+      &__place {
+         font-size: 10px;
+         padding-left: 5px;
+      }
+      &__position {
+         font-size: 14px;
+         padding-left: 5px;
+      }
+      &__period {
+         font-size: 12px;
+      }
+   }
+}

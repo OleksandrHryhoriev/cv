@@ -1,0 +1,53 @@
+@use "../../../index.scss" as vars;
+
+.experience {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   &__position {
+      font-size: 20px;
+      font-weight: 600;
+      color: vars.$color-accent;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+   }
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-weight: 500;
+      font-size: 16px;
+   }
+   &__place {
+   }
+   &__period {
+   }
+
+   @media (max-width: 768px) {
+      gap: 15px;
+      &__place {
+         font-size: 12px;
+         padding-left: 5px;
+      }
+      &__position {
+         font-size: 15px;
+         padding-left: 5px;
+      }
+      &__period {
+         font-size: 14px;
+      }
+   }
+   @media (max-width: 470px) {
+      &__place {
+         font-size: 10px;
+         padding-left: 5px;
+      }
+      &__position {
+         font-size: 14px;
+         padding-left: 5px;
+      }
+      &__period {
+         font-size: 12px;
+      }
+   }
+}

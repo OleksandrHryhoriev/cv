@@ -1,3 +1,5 @@
+@use "../../../index.scss" as vars;
+
 .skills {
    &__title {
       display: block;
@@ -21,6 +23,28 @@
       }
       &__list {
          padding: 0 0 0 15px;
+      }
+   }
+
+   @media (max-width: 768px) {
+      margin-bottom: 10px;
+      &__title {
+         margin-bottom: 15px;
+         color: vars.$color-dark;
+      }
+      &__list {
+         padding: 0 0 0 5px;
+         gap: 10px;
+      }
+      &__item {
+         font-weight: 600;
+         font-size: 15px;
+         color: vars.$color-accent;
+      }
+   }
+   @media (max-width: 470px) {
+      &__item {
+         font-size: 14px;
       }
    }
 }

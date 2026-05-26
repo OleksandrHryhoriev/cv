@@ -1,5 +1,6 @@
 import styles from "./App.module.scss";
 import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
          <Header />
          <div className={styles.container}>
             <Sidebar />
+            <Main />
          </div>
       </div>
    );
