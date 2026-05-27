@@ -17,7 +17,7 @@ const Section = ({ title, subtitle, children }: SectionProps) => {
                )}
             </h2>
          )}
-         <div className={title ? `${styles.section__content}` : null}>
+         <div className={title ? `${styles.section__content}` : undefined}>
             {children}
          </div>
       </section>
