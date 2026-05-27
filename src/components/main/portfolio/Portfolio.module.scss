@@ -1,0 +1,116 @@
+@use "../../../index.scss" as vars;
+
+.portfolio {
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+   }
+   &__listItem {
+      position: relative;
+      padding-left: 12px;
+      &::before {
+         content: "";
+         display: block;
+         width: 5px;
+         height: 5px;
+         background-color: vars.$color-dark;
+         position: absolute;
+         top: 8px;
+         left: 0;
+         border-radius: 50%;
+      }
+   }
+   &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 21px;
+      color: vars.$color-dark;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+   }
+   &__sublist {
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      & .portfolio__item::before {
+         content: "";
+         display: block;
+         width: 9px;
+         height: 2px;
+         background-color: vars.$color-dark;
+         position: absolute;
+         top: 9px;
+         left: -15px;
+      }
+   }
+   &__item {
+      position: relative;
+      color: vars.$color-accent;
+   }
+   &__link {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+      @media (hover: hover) {
+         &:hover {
+            color: vars.$color-hover;
+            & ~ .portfolio__preview {
+               display: block;
+            }
+         }
+      }
+   }
+
+   &__preview {
+      display: none;
+      width: 250px;
+      height: 300px;
+      position: absolute;
+      z-index: 4;
+      top: 100%;
+      left: 100px;
+      overflow: hidden;
+      & img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   @media (max-width: 768px) {
+      &__list {
+         gap: 20px;
+      }
+      &__listItem {
+         padding-left: 10px;
+      }
+      &__title {
+         font-size: 18px;
+      }
+      &__sublist {
+         padding-left: 15px;
+         & .portfolio__item::before {
+            width: 7px;
+            left: -12px;
+         }
+      }
+      &__link {
+         font-size: 15px;
+      }
+   }
+   @media (max-width: 470px) {
+      &__list {
+         gap: 15px;
+      }
+      &__title {
+         font-size: 16px;
+         margin-bottom: 10px;
+      }
+      &__link {
+         font-size: 14px;
+      }
+   }
+}

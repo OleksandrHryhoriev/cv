@@ -15,7 +15,7 @@ const Main = () => {
          <Section>
             <Objective />
          </Section>
-         <Section title="Portfolio">
+         <Section title="Portfolio" subtitle="(clickable links)">
             <Portfolio />
          </Section>
          {breakPoint === "mobile" && (
@@ -23,7 +23,7 @@ const Main = () => {
                <SkillsSection />
             </Section>
          )}
-         <Section title="work experience">
+         <Section title="experience">
             <Experience />
          </Section>
          <Section title="education">

@@ -55,4 +55,12 @@
          }
       }
    }
+   @media (max-width: 470px) {
+      width: 40px;
+      &__wrapper {
+         width: 40px;
+         padding: 150px 10px 10px;
+         box-shadow: 2px 0 6px 0px vars.$color-dark;
+      }
+   }
 }

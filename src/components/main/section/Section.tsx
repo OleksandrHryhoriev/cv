@@ -2,13 +2,21 @@ import styles from "./Section.module.scss";
 
 type SectionProps = {
    title?: string;
+   subtitle?: string;
    children: React.ReactNode;
 };
 
-const Section = ({ title, children }: SectionProps) => {
+const Section = ({ title, subtitle, children }: SectionProps) => {
    return (
       <section className={styles.section}>
-         {title && <h2 className={styles.section__title}>{title}</h2>}
+         {title && (
+            <h2 className={styles.section__title}>
+               {title}
+               {subtitle && (
+                  <span className={styles.section__subtitle}>{subtitle}</span>
+               )}
+            </h2>
+         )}
          <div className={title ? `${styles.section__content}` : null}>
             {children}
          </div>

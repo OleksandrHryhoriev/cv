@@ -14,3 +14,11 @@ export type Occupation = {
       end?: string;
    };
 };
+
+export type PortfolioItem = {
+   type: "commercial" | "react" | "other";
+   title: string;
+   link: string;
+   imageUrl: string;
+   upload: number; //upload date, format yyyymmdd
+};
