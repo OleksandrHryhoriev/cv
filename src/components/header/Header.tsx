@@ -7,7 +7,7 @@ const Header = () => {
          <div className={styles.header__container}>
             <div className={styles.header__info}>
                <h1 className={styles.header__name}>Oleksandr Hryhoriev</h1>
-               <p className={styles.header__prof}>Frontend Developer</p>
+               <p className={styles.header__prof}>Fullstack Developer</p>
             </div>
             <div className={styles.header__foto}>
                <span>
