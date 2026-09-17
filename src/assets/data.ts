@@ -9,7 +9,7 @@ export const SKILLS: SidebarBlock = [
          "Redux Toolkit, Zustand",
          "NodeJS, Express",
          "MongoDB, PostgreSQL",
-         "Git",
+         "Git, Github",
          "HTML5, CSS3, SASS",
          "Figma, PS",
       ],
